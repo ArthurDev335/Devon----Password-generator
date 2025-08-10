@@ -8,7 +8,7 @@ document.getElementById("buttonValider").addEventListener("click", () => {
     console.log(chiffre.checked)
     console.log(speciaux.checked)
 
-    fetch("/creation_mdp", {
+    fetch("https://devon-password-generator.onrender.com", {
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify({ 
