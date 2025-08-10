@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="body">
+    <section class="request">
+        <h1 class="title">Devon — Password Generator </h1>
+        <div class="options">
+            <h2 class="subtitle">Choose a length</h2>
+
+            <select name="nombreCaracteres" id="nombreCaracteres" class="choix">
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+            </select>
+
+            <div class="nombre">
+                <p class="text">Numbers</p>
+                <input type="checkbox" name="nombre" id="nombre" class="checkbox">
+            </div>
+
+            <div class="speciaux">
+                <p class="text">Special Characters</p>
+                <input type="checkbox" name="caracteresSpeciaux" id="caracteresSpeciaux" class="checkbox">
+            </div>
+        </div>
+
+        <div class="valider">
+            <button class="buttonValider" id="buttonValider"> Generate </button>
+        </div>
+
+        <div class="response">
+            <p id="reponse"></p>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
